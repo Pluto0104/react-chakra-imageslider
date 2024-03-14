@@ -7,20 +7,17 @@ const ImageSingleSlider = () => {
 
   // Update the currentIndex state to move to the previous or next image in the array.
   const goToPreviousImage = () => {
-    // if current is end of left, the function does nothing.
     if (currentIndex < 0) return;
     setCurrentIndex(prevIndex => prevIndex - 1);
   };
 
   const goToNextImage = () => {
-    // if current is end of right, the function does nothing.
     if (currentIndex > IMAGES.length - 1) return;
     setCurrentIndex(prevIndex => prevIndex + 1);
   };
 
   return (
     <Box width="400px" height="300px" margin="auto" marginY="120px">
-      {/* Main Container */}
       <Box
         // Hide the overflowing part of the images
         // The container has a fixed width  .

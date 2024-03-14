@@ -24,14 +24,6 @@ function ImageSlider({ images, isHover }) {
     setCurrentIndex(prevIndex => prevIndex + 1);
   };
 
-  // Defines the styling for the image slider container. It uses CSS properties to create a sliding effect based on the currentIndex. The transform property is used to shift the container horizontally to reveal the current image.
-  // const slideStyle = {
-  //   display: 'flex',
-  //   flexDirection: 'row',
-  //   transition: 'transform 0.5s ease-in-out',
-  //   transform: `translateX(-${currentIndex * 100}%)`, // Slide based on currentIndex
-  // };
-
   return (
     <>
       {/* Main Container */}
@@ -44,7 +36,6 @@ function ImageSlider({ images, isHover }) {
         // The position property in CSS is used to control the positioning of an element within its containing element. The element is positioned relative to its normal position
         position="relative"
       >
-        {/* Image Slider Container */}
         <Box
           style={{
             display: 'flex',
@@ -62,7 +53,6 @@ function ImageSlider({ images, isHover }) {
                 width="100%"
                 height="100%"
                 objectFit="cover"
-                // backgroundSize="cover"
               />
             </Box>
           ))}
