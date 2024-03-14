@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaHeart } from 'react-icons/fa';
 import { Box, Image, IconButton, HStack, Stack, Grid } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon, StarIcon } from '@chakra-ui/icons';
 
